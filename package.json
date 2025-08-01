@@ -1,6 +1,9 @@
 {
-  "name": "plat-ui",
-  "version": "1.0.0",
+  "name": "@ha10id/plat-ui",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ha10id"
+  },
+  "version": "1.0.1",
   "description": "PlatUI",
   "license": "MIT",
   "author": "Anthonio Achiduzu",
@@ -8,14 +11,15 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "rollup -c"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3"
