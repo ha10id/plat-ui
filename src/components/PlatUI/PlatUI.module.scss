@@ -6,7 +6,7 @@
 .PlatUi {
   @include common.commonVariables;
 
-  font-family: var(--font);
+  font-family: var(--font), serif;
   background-color: var(--background-surface-primary);
   color: var(--text-primary);
   width: 100%;

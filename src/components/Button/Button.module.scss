@@ -3,7 +3,7 @@
 @use '../../styles/shared-mixins/typography';
 
 .Button {
-  font-family: var(--family-base);
+  font-family: var(--family-base), serif;
   background-color: var(--PlatUi-Button_background);
   color: var(--PlatUi-Button_foreground);
   display: flex;
