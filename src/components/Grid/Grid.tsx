@@ -49,10 +49,10 @@ export const Grid = forwardRef<HTMLDivElement, GridProps>((props, forwardedRef) 
         ...style,
         display,
 
-        '--MaxUi-Grid_gapX': getCssSizeValue(gapX ?? gap ?? 0),
-        '--MaxUi-Grid_gapY': getCssSizeValue(gapY ?? gap ?? 0),
-        '--MaxUi-Grid_cols': cols ?? 0,
-        '--MaxUi-Grid_rows': rows ?? 0
+        '--PlatUi-Grid_gapX': getCssSizeValue(gapX ?? gap ?? 0),
+        '--PlatUi-Grid_gapY': getCssSizeValue(gapY ?? gap ?? 0),
+        '--PlatUi-Grid_cols': cols ?? 0,
+        '--PlatUi-Grid_rows': rows ?? 0
       } as CSSProperties}
       {...rest}
     />

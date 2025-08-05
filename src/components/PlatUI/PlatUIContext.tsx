@@ -2,14 +2,14 @@ import { createContext, useContext } from 'react';
 
 import { type ColorSchemeType, type PlatformType } from '../../types';
 
-export interface MaxUIContextInterface {
+export interface PlatUIContextInterface {
   platform: PlatformType
   colorScheme: ColorSchemeType
 }
 
-export const MaxUIContext = createContext<MaxUIContextInterface>({
+export const PlatUIContext = createContext<PlatUIContextInterface>({
   platform: 'ios',
   colorScheme: 'light'
 });
 
-export const useAppearance = (): MaxUIContextInterface => useContext(MaxUIContext);
+export const useAppearance = (): PlatUIContextInterface => useContext(PlatUIContext);

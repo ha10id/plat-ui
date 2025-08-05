@@ -53,8 +53,8 @@ export const Flex = forwardRef<HTMLDivElement, FlexProps>((props, forwardedRef) 
         ...style,
         display,
 
-        '--MaxUi-Flex_gapX': getCssSizeValue(gapX ?? gap ?? 0),
-        '--MaxUi-Flex_gapY': getCssSizeValue(gapY ?? gap ?? 0)
+        '--PlatUi-Flex_gapX': getCssSizeValue(gapX ?? gap ?? 0),
+        '--PlatUi-Flex_gapY': getCssSizeValue(gapY ?? gap ?? 0)
       } as CSSProperties}
       {...rest}
     />

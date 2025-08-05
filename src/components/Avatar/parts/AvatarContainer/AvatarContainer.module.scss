@@ -5,17 +5,17 @@ $squircleMaskUrl: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5
 .AvatarContainer {
   @include reset-clickable.resetClickable;
 
-  width: var(--MaxUi-AvatarContainer_size);
-  height: var(--MaxUi-AvatarContainer_size);
+  width: var(--PlatUi-AvatarContainer_size);
+  height: var(--PlatUi-AvatarContainer_size);
   position: relative;
   display: block;
 }
 
 // [Properties] Forms
 .AvatarContainer_form_circle .AvatarContainer__content {
-  --MaxUi-AvatarContainer__content_radius: 100%;
+  --PlatUi-AvatarContainer__content_radius: 100%;
 
-  border-radius: var(--MaxUi-AvatarContainer__content_radius);
+  border-radius: var(--PlatUi-AvatarContainer__content_radius);
 }
 .AvatarContainer_form_squircle .AvatarContainer__content {
   mask-image: url($squircleMaskUrl);

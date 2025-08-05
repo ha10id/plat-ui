@@ -3,16 +3,16 @@ import { type ComponentProps, forwardRef, useMemo } from 'react';
 
 import { isIos } from '../../helpers';
 import { useSystemColorScheme } from '../../hooks';
-import styles from './MaxUI.module.scss';
-import { MaxUIContext, type MaxUIContextInterface } from './MaxUIContext';
+import styles from './PlatUI.module.scss';
+import { PlatUIContext, type PlatUIContextInterface } from './PlatUIContext';
 
-export interface MaxUIProps extends Partial<MaxUIContextInterface> {
+export interface PlatUIProps extends Partial<PlatUIContextInterface> {
   children: ComponentProps<'div'>['children']
 
   className?: ComponentProps<'div'>['className']
 }
 
-export const MaxUI = forwardRef<HTMLDivElement, MaxUIProps>((props, ref) => {
+export const PlatUI = forwardRef<HTMLDivElement, PlatUIProps>((props, ref) => {
   const {
     children,
     className,
@@ -25,25 +25,25 @@ export const MaxUI = forwardRef<HTMLDivElement, MaxUIProps>((props, ref) => {
   });
   const colorScheme = colorSchemeProp ?? systemColorScheme;
 
-  const config = useMemo<MaxUIContextInterface>(() => ({
+  const config = useMemo<PlatUIContextInterface>(() => ({
     colorScheme,
     platform
   }), []);
 
   const rootClassName = clsx(
-    styles.MaxUI,
-    styles[`MaxUI_colorScheme_${colorScheme}`],
-    styles[`MaxUI_platform_${platform}`],
+    styles.PlatUi,
+    styles[`PlatUi_colorScheme_${colorScheme}`],
+    styles[`PlatUi_platform_${platform}`],
     className
   );
 
   return (
-    <MaxUIContext.Provider value={config}>
+    <PlatUIContext.Provider value={config}>
       <div ref={ref} className={rootClassName}>
         {children}
       </div>
-    </MaxUIContext.Provider>
+    </PlatUIContext.Provider>
   );
 });
 
-MaxUI.displayName = 'MaxUI';
+PlatUI.displayName = 'PlatUI';

@@ -5,4 +5,4 @@ export interface MaxUIContextInterface {
 }
 export declare const MaxUIContext: import("react").Context<MaxUIContextInterface>;
 export declare const useAppearance: () => MaxUIContextInterface;
-//# sourceMappingURL=MaxUIContext.d.ts.map
+//# sourceMappingURL=PlatUIContext.d.ts.map

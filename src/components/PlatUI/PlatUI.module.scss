@@ -3,7 +3,7 @@
 @use '../../styles/variables/appearance';
 @use '../../styles/variables/typography';
 
-.MaxUI {
+.PlatUi {
   @include common.commonVariables;
 
   font-family: var(--font);

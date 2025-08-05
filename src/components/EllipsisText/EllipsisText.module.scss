@@ -5,7 +5,7 @@
 
   &_multiline {
     display: -webkit-box;
-    -webkit-line-clamp: var(--MaxUi-EllipsisText_linesCount);
+    -webkit-line-clamp: var(--PlatUi-EllipsisText_linesCount);
     -webkit-box-orient: vertical;
   }
 

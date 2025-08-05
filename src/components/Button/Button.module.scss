@@ -4,8 +4,8 @@
 
 .Button {
   font-family: var(--family-base);
-  background-color: var(--MaxUi-Button_background);
-  color: var(--MaxUi-Button_foreground);
+  background-color: var(--PlatUi-Button_background);
+  color: var(--PlatUi-Button_foreground);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,14 +40,14 @@
 .Button_activeMode {
 
   &_ripple {
-    --Ripple_backgroundColor: var(--MaxUi-Button_background-active);
+    --Ripple_backgroundColor: var(--PlatUi-Button_background-active);
   }
 
   &_highlight {
 
     &:active {
-      background-color: var(--MaxUi-Button_background-active);
-      color: var(--MaxUi-Button_foreground-active, var(--MaxUi-Button_foreground));
+      background-color: var(--PlatUi-Button_background-active);
+      color: var(--PlatUi-Button_foreground-active, var(--PlatUi-Button_foreground));
     }
   }
 }
