@@ -55,10 +55,10 @@ export const Playground: Story = {
         mode="island"
       >
         <CellSimple
-          title="Vadim Tregubenko"
+          title="John Doe"
           before={(
             <Avatar.Container size={40}>
-              <Avatar.Image src="https://sun9-67.userapi.com/s/v1/ig2/CY_xDesKnMtl0OiJynK0oc7QnxQVJUgeciJSi_MpZUiE3EHSCNltr76jugXaygGd2Xh0M8-61v7Jwfl1kO87YWVe.jpg?quality=95&crop=0,0,1440,1440&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440&ava=1&u=SpmuDKJYdLKKRYYDgjLVQdEn6QnBonR3kSYxCSkCnm4&cs=200x200" />
+              <Avatar.Image src="https://0.academia-photos.com/54292502/16855114/17093173/s200_john.dou.jpg"/>
             </Avatar.Container>
           )}
           showChevron

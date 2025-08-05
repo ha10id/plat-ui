@@ -22,7 +22,7 @@ export const Playground: Story = {
           </Avatar.Overlay>
         )}
       >
-        <Avatar.Image src="https://sun9-21.userapi.com/1N-rJz6-7hoTDW7MhpWe19e_R_TdGV6Wu5ZC0A/67o6-apnAks.jpg" />
+          <Avatar.Image src="https://0.academia-photos.com/54292502/16855114/17093173/s200_john.dou.jpg" />
       </Avatar.Container>
     );
   }
